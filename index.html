@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  
+  <p class="title">SPLI <br> TTER</p>
+  <div class="container">
+
+    <div class="left">
+      <div class="billBox">
+        
+        <div class="heading">
+          <label>Bill</label>
+          <small class="billError ">Cant' be 0</small>
+        </div>
+
+        <div class="billInputBox inputBox ">
+        <img src="images/icon-dollar.svg" alt="dollar" class="dollar">
+        <input type="number" class="billInput input">
+        </div>
+      </div>
+
+      <div class="tipContainer">
+
+        <label>Select Tip%</label>
+
+        <div class="tipBox">
+          <button class="tip five">5% </button>
+          <button class="tip ten"> 10%</button>
+          <button class="tip fifteen">15% </button>
+          <button class="tip twentyfive" >25% </button>
+          <button class="tip fifty">50% </button>
+          <input type="number" class="tip custom" placeholder="Custom">
+          <small class="customError">Cant' be 0</small>
+        </div>
+      
+      </div>
+
+      <div class="peopleBox">
+
+        <div class="heading">
+          <label>Number of People</label>
+          <small class="peopleError ">Cant' be 0</small>
+        </div>
+       
+
+
+        <div class="peopleInputBox inputBox">
+          <img src="images/icon-person.svg" alt="person">
+          <input type="number" class="peopleInput input">
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="top">
+          <div class="amountBox box">
+            <div class="boxTitle">
+              <p>Tip Amount</p> 
+              <span>/ person</span>
+            </div>
+
+            <div class="tipAmount amount"> $00.00</div>
+
+          </div>
+
+          <div class="totalBox box">
+            <div class="boxTitle">
+              <p>Total</p> 
+              <span>/ person</span>
+            </div>
+
+            <div class="peopleAmount amount"> $00.00</div>
+          </div>
+      </div>
+
+      <div class="bottom">
+        <button class="resetBtn">RESET</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
